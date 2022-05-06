@@ -1,0 +1,826 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&family=Poppins:wght@600&display=swap');
+
+body {
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+p, strong, label, a, li {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*
+    Bg Sections
+*/
+/*TODO: Hacer el mobile */
+.container {
+    max-width: 80vw;
+}
+
+.ttl-color {
+    color: #06d7c5;
+}
+
+/*TODO: Hacer el mobile */
+#section1 {
+    background-image: url('../img/header/bg_col_header.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+#section1 .row {
+    align-items: center;
+    height: 100vh;
+}
+
+#section1 .col-lg-6:nth-child(2) {
+    position: relative;
+}
+
+#section1 h1 {
+    font-size: 7vh;
+}
+
+#section1 p {
+    font-size: 2.5vh;
+    padding-right: 10vw;
+}
+
+#section1 .p-img-header {
+    position: absolute;
+    left: -2vw;
+    top: -40vh;
+    height: 80vh;
+}
+
+/* 
+    To top
+*/
+
+#button {
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: .5s all ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#button img {
+    width: 80px;
+    height: 80px;
+}
+
+#button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*
+    Btn Contact
+  */
+.btn-contact {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 80px;
+    background-size: 200% 200%;
+    color: white;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-image: linear-gradient(to right, rgba(8, 173, 185, 1) 0%, rgb(124, 209, 201) 50%, rgba(6, 221, 199, 1) 100%);
+    transition: 0.5s;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: 900;
+}
+
+.btn-contact:hover {
+    transform: scale(1.1);
+    background-position: right center;
+    box-shadow: 0 10px 15px rgba(50, 50, 93, 0.11), 0 5px 13px rgba(0, 0, 0, 0.08);
+    color: #fff;
+}
+
+/*
+    Counter
+  */
+#section2 {
+    background-image: url('../img/counter/bg_circle_2.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.counter {
+    background-image: url('../img/counter/icon-uplanner.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px 0;
+}
+
+.counter h4 {
+    color: #00dec6;
+}
+
+.counter h2 {
+    color: #245064;
+    font-size: 7vh;
+}
+
+/*
+    Carousel Cards
+*/
+.carousel-cards h2 {
+    color: #00dec6;
+    font-size: 5vh;
+}
+
+.carousel-cards p {
+    color: #245064;
+    font-size: 3vh;
+}
+
+.swiper-pagination {
+    position: relative !important;
+    bottom: 0 !important;
+}
+
+.card {
+    background-image: url('../img/card/bg_card.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 300px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+    border-radius: 0px 0px 0px 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.card h4 {
+    color: #245064;
+    font-size: 3vh;
+    margin: 20px 0 60px 0;
+}
+
+.card p {
+    color: #292f36;
+    font-size: 2vh;
+}
+
+/*
+    Tab
+*/
+.nav {
+    justify-content: space-between;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.nav-tabs {
+    border-bottom: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.nav-item {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3vh;
+}
+
+.nav-link {
+    color: #245064;
+    transition: .3s all ease-in-out;
+}
+
+.nav-link:hover {
+    border: none;
+    color: #245064;
+}
+
+.nav-link.active {
+    color: #fff !important;
+    background-color: #06d7c5 !important;
+    padding: 10px 60px !important;
+    border: none;
+    border-radius: 30px;
+}
+
+/*
+    Tab - Info cards
+*/
+.info-card {
+    background-color: #f1f1f1;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 30px;
+    padding: 50px 0;
+    margin-top: 50px;
+}
+
+.info-card h4 {
+    color: #245064;
+}
+
+.info-card h2 {
+    color: #06d7c5;
+    font-size: 6vh;
+}
+
+.info-card p {
+    padding: 0 20px;
+}
+
+.tab-pane li {
+    font-weight: 900;
+}
+
+/*
+    Transformation
+*/
+#section5 {
+    background-image: url('../img/achievements/bg_half_circle.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 5vh;
+}
+
+.transformation h2 {
+    font-size: 6vh;
+}
+
+.transformation p {
+    font-size: 2.5vh;
+}
+
+.swiper {
+    padding-bottom: 30px !important;
+}
+
+.card-achieve {
+    background-image: url('../img/achievements/bg_circle.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    padding: 10px 20px;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-achieve img {
+    width: 120px;
+    height: auto;
+}
+
+.card-achieve p {
+    font-size: 1.7vh;
+    margin-top: 10px;
+}
+
+.mySwiperLogos img {
+    filter: grayscale(1);
+}
+
+/*
+    About
+*/
+#section5 {
+    padding-top: 15vh;
+}
+
+#section6 {
+    padding-bottom: 10vh;
+}
+
+#section6 .container-tabs {
+    width: 60vw !important;
+}
+
+.p-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 100px 14vw 100px 6vw;
+}
+
+.p-about .logo-planner {
+    height: auto;
+    width: 20vw;
+    padding-bottom: 8vh;
+}
+
+.logo-planner-header {
+    height: auto;
+    width: 18vw;
+    margin-bottom: 8vh;
+}
+
+.p-about h4 {
+    color: #245064;
+}
+
+.bg-team {
+    background-image: url('../img/team/img-team.png');
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-top: 5vh;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+.bg-team h2 {
+    font-size: 6vh;
+}
+
+.bg-team h3 {
+    font-size: 6vh;
+}
+
+.card-linkedin {
+    background-color: #fff;
+    background-image: url('../img/profile/bg_card_linked.png');
+    background-repeat: no-repeat;
+    background-position: -25%;
+    background-size: contain;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    transition: .5s all ease-in-out;
+}
+
+.card-linkedin:hover {
+    background-image: linear-gradient(to right, rgba(8, 173, 185, 1) 0%, rgb(85, 243, 227) 50%, rgba(6, 221, 199, 1) 100%);
+}
+
+.swiper-slide {
+    position: relative;
+}
+
+.linked-btn {
+    position: absolute;
+    height: 80px;
+    top: -32px;
+    right: 0;
+}
+
+/*
+    Mapa
+*/
+#section7 {
+    background-image: url('../img/mapa/mapa.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#section9 h2 {
+    font-size: 7vh;
+}
+
+#section9 p {
+    font-size: 2.5vh;
+    padding-right: 10vw;
+}
+
+.container-text {
+    padding-left: 10vw;
+}
+
+.bg-form {
+    background-image: url('../img/form/bg_form_2.png');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+.hbspt-form{
+    width: 60%;
+    margin: auto;
+}
+
+input, select {
+    width: 100%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 10px;
+}
+
+form ul {
+    list-style: none;
+    padding: 0;
+}
+
+form li label {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+form label {
+    font-weight: 900;
+    font-size: 25px;
+    color: #fff;
+}
+
+.hs-form-1007530f-21a7-4d6f-ba06-8d349f2c0a88_b986dec8-5f7c-46c3-99fc-ba08da349b8b fieldset.form-columns-1 .input {
+    margin-bottom: 10px;
+}
+
+.hs_area_de_interes {
+    margin-top: 30px;
+}
+
+input[type="submit"] {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 900;
+    box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.1);
+    background-color: #245064;
+    box-shadow: 0 10px 15px rgba(50, 50, 93, 0.11), 0 5px 13px rgba(0, 0, 0, 0.08);
+    color: #fff;
+}
+
+input[type="file"] {
+    /* Style the color of the message that says 'No file chosen' */
+    color: #878787;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background: #245064;
+    border: 1px solid #245064;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    transition: all .5s ease;
+
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background: #fff;
+    color: #245064;
+}
+
+/*
+    Footer
+*/
+footer {
+    background-image: linear-gradient(to right, rgba(8, 173, 185, 1) 0%, rgba(6, 221, 199, 1) 100%);
+}
+
+.logo-footer {
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.ttl-white {
+    color: #fff;
+}
+
+.ttl-blue {
+    color: #245064;
+}
+
+.bg-footer-yellow {
+    background-color: #f6d33f;
+    color: #000;
+    padding: 11px 0;
+}
+
+footer h5,
+footer li {
+    color: #fff;
+}
+
+footer li {
+    font-size: 12px;
+}
+
+.p-align-columns {
+    padding-top: 9.5vh;
+}
+
+.bg-footer-yellow .logo-socials {
+    height: 30px;
+}
+
+.p-footer {
+    padding: 15vh 0;
+}
+
+.logo-planner-header-mobile, 
+.visible {
+    display: none!important;
+}
+
+@media(max-width: 1080px) {
+    .container {
+        max-width: 95vw;
+    }
+
+    .no-touch #cd-vertical-nav {
+        display: none;
+    }
+
+    #section1 {
+        background-image: url('../img/form/bg_form_2.png');
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    #section1 p {
+        padding-right: 0;
+    }
+
+    .logo-planner-header {
+        width: 40vw;
+        height: auto;
+        display: none;
+    }
+
+    .logo-planner-header-mobile {
+        display: block;
+        width: 50vw;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    #section1 h1 {
+        font-size: 45px;
+    }
+
+    #section1 .p-img-header {
+        display: none;
+    }
+
+    .counter {
+        background-size: 80px;
+        background-position: center top;
+        padding-top: 90px;
+        padding-bottom: 10vh;
+        margin-top: 55px;
+    }
+
+    .counter h2 {
+        font-size: 45px;
+    }
+    .carousel-cards h2{
+        font-size: 4vh;
+    }
+    .nav {
+        overflow-y: hidden;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: inherit !important;
+        border-radius: 10px;
+    }
+
+    .nav-item {
+        font-size: 12px;
+        display: flex;
+        justify-content: flex-start;
+        flex-grow: 1;
+        flex-shrink: 0;
+    }
+    #section4{
+        padding-top: 15vh;
+    }
+
+    .info-card h2 {
+        font-size: 25px;
+    }
+
+    .info-card p {
+        padding: 0;
+        font-size: 12px;
+    }
+
+    .transformation {
+        text-align: center;
+    }
+
+    .transformation h2 {
+        font-size: 30px;
+    }
+
+    .transformation p {
+        font-size: 12px;
+    }
+
+    .card-achieve {
+        margin: 10px;
+        height: 210px;
+    }
+
+    .card-achieve p {
+        font-size: 10px;
+    }
+
+    .card-achieve:nth-child(5) img {
+        width: 100px;
+    }
+    .p-about{
+        text-align: center;
+    }
+    .p-about .logo-planner {
+        width: 70%;
+        margin: 0 auto 0px auto;
+    }
+
+    .p-about {
+        padding: 50px 40px 0 40px;
+    }
+
+    #section6 .container-tabs {
+        width: 100% !important;
+    }
+    
+
+    .bg-team {
+        background-image: none;
+    }
+
+    .mySwiperExecutive .swiper-slide img {
+        height: 100px;
+        width: auto;
+        padding-top: 10px;
+    }
+
+    .linked-btn {
+        top: -45px;
+    }
+
+    .card-linkedin {
+        text-align: center;
+    }
+
+    .card-linkedin h4 {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    .card-linkedin h5 {
+        font-size: 12px;
+    }
+
+    .card-linkedin p {
+        font-size: 10px;
+    }
+
+    .bg-team h2 {
+        font-size: 30px;
+    }
+
+    .bg-team h3 {
+        font-size: 25px;
+    }
+    #section7 {
+        background-image: url('../img/mapa/Desktop-LandingPage---Mapa-baja.png');
+        background-size: 100%;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+    .visible{
+        display: block!important;
+        text-align: center;
+    }
+    .swiper-button-next, .swiper-rtl .swiper-button-prev,
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after{
+        color: #245064!important;
+    }
+
+    #section9 h2 {
+        font-size: 30px;
+    }
+
+    #section9 p {
+        font-size: 15px;
+    }
+
+    .bg-form {
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        min-height: auto;
+    }
+    .hbspt-form{
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .container-text {
+        padding: 0 20px;
+    }
+
+    .p-footer {
+        padding: 15vh 20px;
+    }
+
+    .bg-footer-yellow {
+        text-align: center;
+    }
+
+    .bg-footer-yellow h6 {
+        margin: 10px 0;
+    }
+
+    .center-mobile {
+        justify-content: center !important;
+        margin: 10px 0;
+    }
+
+    .bg-team {
+        height: 50vh;
+        text-align: center;
+    }
+
+    #button {
+        right: 10px;
+        bottom: 10px;
+    }
+
+    #button img {
+        width: 60px;
+        height: 60px;
+    }
+
+    footer h2{
+        font-size: 35px;
+    }
+    footer h5{
+        font-size: 30px;
+    }
+    footer li{
+        font-size: 15px;
+    }
+    .cd-vertical-nav{
+        display: none;
+    }
+    .p-mobile{
+        padding: 20px 0;
+    }
+    .swiper{
+        padding: 50px!important;
+    }
+}
